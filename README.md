@@ -1,57 +1,47 @@
-📌 Task Manager REST API
+# 📌 Task Manager REST API
 
-A professional RESTful API built with Django + Django REST Framework (DRF) and MySQL, featuring:
+A professional RESTful API built with **Django + Django REST Framework (DRF)** and **MySQL**, featuring:
 
-✅ CRUD operations for Tasks and Categories
+- ✅ CRUD operations for Tasks and Categories  
+- ✅ JWT Authentication  
+- ✅ Search, Filters & Ordering  
+- ✅ Swagger/OpenAPI documentation  
+- ✅ Responsive HTML landing page  
+- ✅ Ready for  Render deployment  
 
-✅ JWT Authentication
+---
 
-✅ Search, Filters & Ordering
+## 🚀 Features
 
-✅ Swagger/OpenAPI documentation
+### Task & Category Management
+- Create, Read, Update, Delete tasks & categories  
+- Priority levels (High, Medium, Low)  
+- Due date validation (cannot be in past)  
+- Track completion status & overdue tasks  
 
-✅ Responsive HTML landing page
+### Advanced API Features
+- JWT Authentication (`/api/auth/token/`)  
+- Filtering (e.g., `/api/tasks/?is_completed=false`)  
+- Searching (e.g., `/api/tasks/?search=report`)  
+- Ordering (e.g., `/api/tasks/?ordering=due_date`)  
 
-✅ Ready for Docker & Render deployment
+### Documentation
+- Swagger UI → `/api/docs/`  
+- OpenAPI schema → `/api/schema/`  
 
-🚀 Features
+### Deployment
+- Dockerfile included  
+- Compatible with **Render, Railway, Heroku, etc.**  
 
-Task & Category Management
+---
 
-Create, Read, Update, Delete tasks & categories
+## 🛠️ Installation
 
-Priority levels (High, Medium, Low)
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/<your-username>/taskapi.git
+   cd taskapi
 
-Due date validation (cannot be in past)
-
-Track completion status & overdue tasks
-
-Advanced API Features
-
-JWT Authentication (/api/auth/token/)
-
-Filtering (e.g., /api/tasks/?is_completed=false)
-
-Searching (e.g., /api/tasks/?search=report)
-
-Ordering (e.g., /api/tasks/?ordering=due_date)
-
-Documentation
-
-Swagger UI available at /api/docs/
-
-OpenAPI schema at /api/schema/
-
-Deployment
-
-Dockerfile included
-
-Compatible with Render, Railway, Heroku, etc.
-
-🛠️ Installation
-1. Clone the repo
-git clone https://github.com/<your-username>/taskapi.git
-cd taskapi
 
 2. Create a virtual environment
 python -m venv venv
